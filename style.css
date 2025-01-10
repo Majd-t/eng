@@ -760,77 +760,6 @@ hr{
     }
 } 
 
-/*
-.main-footer{
-    padding: 4rem 7%;
-    background-color: var(--textcolor);
-    --textcolor:#0052cc;
-}
-.footer-inner{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.footer-content{
-    flex: 1 1 200px;
-    text-align: center;
-}
-.footer-content h1{
-    color: white;
-    font-size: 25px;
-}
-.link a{
-    display: block;
-    text-align: center;
-    color: white;
-    font-size: 1.5rem;
-    padding: 1rem;
-    margin: 0.5rem;
-}
- */
-
-
-
-
-
-
-
-
-
-/* .doc-poster:hover img{
-    transform: translateY(-20px);
-}
-
-.doc-poster::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, #f5f5f5 50%, transparent);
-    z-index: 1;
-    bottom: -220px;
-    left: 0;
-    transition: 0.5s;
-}
-.doc-poster:hover::after{
-    bottom: -100px;
-}
-.details{
-    color: black;
-    font-size: 25px;
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-    z-index: 2;
-}
-.doc-poster:hover .details{
-    bottom: 30px;
-} */
-
-
-
-
-
 
 
 
@@ -1007,7 +936,7 @@ hr{
         row-gap: 10px; /* تقليل المسافة بين العناصر */
     }
 }
-@media (max-width: 700px){
+@media (max-width: 900px){
     footer{
         bottom: unset;
     }
@@ -1017,10 +946,35 @@ hr{
     .col:nth-child(2), .col:nth-child(3){
         flex-basis: 100%;
     }
+    .doktor{
+        /*  max-width: 400px; 
+          margin-left: 500px; /* مسافة بين الصورة والفورم 
+          margin-top: 5000px auto;
+          margin-bottom: 500px auto; */
+          position:relative; /* وضع الصورة بشكل مستقل عن العناصر الأخرى */
+          top: 10%; /* تحديد الموقع العمودي بالنسبة للصفحة */
+          right: 0%; /* تحديد الموقع الأفقي بالنسبة للصفحة */
+          transform: translateY(3%); /* لتوسيط الصورة عموديًا بالنسبة للنقطة */
+          width: 450px; /* عرض الصورة */
+          height: auto; /* الحفاظ على نسبة العرض والطول */
+
+          
+        
+      }
+      .container {
+        max-width: 900px;
+        width: 90%;
+        background: #fff;
+        padding: 40px;
+        border-radius: 70px;
+        box-shadow: 0 0 15px rgb(0, 0, 0);  /* ظل الفورم*/
+        background-image: url(images/blurbg.jpg);
+        background-size: cover; /* لجعل الصورة الخلفية تغطي المساحة بالكامل */
+        background-position: center; /* لتوسيط الصورة الخلفية */
+        margin: 25px; /* لإضافة هامش حول الفورم */
+        font-size: 1.5rem;
+        
+    }
 }
-
-    
-
-    
 
     
